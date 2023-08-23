@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính thuế thu nhập cá nhân</title>
+  </head>
+  <body>
+    <h1>Tính thuế thu nhập cá nhân</h1>
+
+    <label for="ho-ten">Họ tên: </label>
+    <input type="text" id="ho-ten" /><br />
+
+    <label for="tong-thu-nhap">Tổng thu nhập năm (trăm triệu) : </label>
+    <input type="number" id="tong-thu-nhap" /><br />
+
+    <label for="so-nguoi-phu-thuoc">Số người phụ thuộc: </label>
+    <input type="number" id="so-nguoi-phu-thuoc" /><br />
+
+    <button onclick="tinhThue()">Tính thuế</button>
+
+    <p id="ket-qua"></p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tính hóa đơn cáp</h1>
+
+    <label for="ma-khach-hang">Mã khách hàng: </label>
+    <input type="text" id="ma-khach-hang" /><br />
+
+    <label for="loai-khach-hang">Loại khách hàng: </label>
+    <select id="loai-khach-hang" onchange="toggleInput()">
+      <option value="nha-dan">Nhà dân</option>
+      <option value="doanh-nghiep">Doanh nghiệp</option></select
+    ><br />
+
+    <label for="so-ket-noi">Số kết nối: </label>
+    <input type="number" id="so-ket-noi" /><br />
+
+    <label for="so-kenh">Số kênh cao cấp: </label>
+    <input type="number" id="so-kenh" /><br />
+
+    <button onclick="tinhHoaDon()">Tính hóa đơn</button>
+
+    <p id="ket-qua"></p>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết quả thi tuyển</title>
+  </head>
+  <body>
+    <h1>Kết quả thi tuyển</h1>
+
+    <label for="diem-chuan">Điểm chuẩn của hội đồng: </label>
+    <input type="number" id="diem-chuan" /><br />
+
+    <label for="diem-1">Điểm môn thứ 1: </label>
+    <input type="number" id="diem-1" /><br />
+
+    <label for="diem-2">Điểm môn thứ 2: </label>
+    <input type="number" id="diem-2" /><br />
+
+    <label for="diem-3">Điểm môn thứ 3: </label>
+    <input type="number" id="diem-3" /><br />
+
+    <label for="khu-vuc">Khu vực:</label>
+    <select id="khu-vuc">
+      <option value="X">Không thuộc khu vực ưu tiên</option>
+      <option value="A">Khu vực A</option>
+      <option value="B">Khu vực B</option>
+      <option value="C">Khu vực C</option></select
+    ><br />
+
+    <label for="doi-tuong">Đối tượng:</label>
+    <select id="doi-tuong">
+      <option value="0">Không thuộc đối tượng ưu tiên</option>
+      <option value="1">Đối tượng 1</option>
+      <option value="2">Đối tượng 2</option>
+      <option value="3">Đối tượng 3</option></select
+    ><br />
+
+    <button onclick="tinhKetQua()">Tính kết quả</button>
+
+    <p id="ket-qua"></p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
